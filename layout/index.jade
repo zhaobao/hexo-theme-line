@@ -13,8 +13,6 @@ block content
         each post in page.posts.toArray()
             a(href=url_for(post.path), title=post.title).body__item.post__title
                 span!= post.title
-                - var d = new Date(post.date)
-                - var dstr = d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDate()
-                span(class="archive_date")!= dstr
+                span(class="archive_date")!= date(post.date)
     div.body__pagination
         div.pull-right!= paginator()
