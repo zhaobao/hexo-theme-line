@@ -7,5 +7,7 @@ menus:
   about: about
 
 # zoom image support
+zoom: true
 
 # comments
+disqus: zhishoumowen

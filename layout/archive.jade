@@ -5,7 +5,8 @@ block nav
     include _partial/menu
 
 block header
-    - var pageHeader = __("site_tags") + " : " + page.tag
+    - var tag = __("site_tags");
+    - var pageHeader = tag + " : " + page.tag
     include _partial/body_header
 
 block content

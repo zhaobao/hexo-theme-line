@@ -50,6 +50,29 @@
     font-style: normal
 }
 
+html,body {
+    height: 100vh;
+}
+
+body {
+    color: $color_gray;
+    background-color: $color_bg;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 300;
+}
+
+code {
+    overflow-x: scroll;
+}
+
+img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
 .pull-right {
     float: right;
 }
@@ -69,4 +92,34 @@ pre {
     max-width: 100%;
     overflow-x: scroll;
     white-space: pre-wrap;
+}
+
+h1::before {
+    content: "#";
+    padding-right: 5px;
+}
+
+h2::before {
+    content: "##";
+    padding-right: 5px;
+}
+
+h3::before {
+    content: "###";
+    padding-right: 5px;
+}
+
+h4::before {
+    content: "####";
+    padding-right: 5px;
+}
+
+h5::before {
+    content: "#####";
+    padding-right: 5px;
+}
+
+h6::before {
+    content: "######";
+    padding-right: 5px;
 }
