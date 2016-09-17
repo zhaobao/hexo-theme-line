@@ -2,7 +2,7 @@
 Dead simple and beautify Hexo theme
 
 # preview
-![img](ad1.png)
+![img](ad.png)
 
 # how to use
 - clone this theme
