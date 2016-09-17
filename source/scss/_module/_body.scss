@@ -27,6 +27,7 @@
     border-right-width: 0;
     display: flex;
     align-items: center;
+    transition: all 400ms;
     &:hover {
         border-color: $color_dark;
     }
@@ -46,9 +47,10 @@
         opacity: 0.8;
         padding: $padding_bg;
         line-height: 1.5;
+        transition: all 400ms;
         &:hover {
             opacity: 1;
-            border-color: $color_dark;
+            border: 1px solid $color_dark;
         }
     }
     .post__title {
@@ -75,6 +77,7 @@
             border: 1px solid $color_border;
             text-decoration: none;
             color: $color_dark;
+            transition: all 400ms;
             &:hover {
                 border-color: $color_dark;
             }

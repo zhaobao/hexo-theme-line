@@ -73,6 +73,7 @@ $nav_bottom_height: 50px;
         box-sizing: border-box;
         list-style-type: none;
         border-bottom: 1px solid $color_border;
+        transition: all 400ms;
         &:hover {
             cursor: pointer;
             box-sizing: border-box;

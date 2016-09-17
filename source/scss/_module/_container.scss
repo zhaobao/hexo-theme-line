@@ -24,10 +24,9 @@
     margin: 10px;
     cursor: pointer;
     background: $color_bg;
+    transition: all 400ms;
     &:hover {
         $line_sep: 2px;
-        //color: $color_white;
-        //background-color: $color_gray;
         background: repeating-linear-gradient(135deg,
                 $color_border,
                 $color_border $line_sep,
