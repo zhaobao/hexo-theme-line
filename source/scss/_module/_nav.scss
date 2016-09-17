@@ -45,6 +45,7 @@ $nav_bottom_height: 50px;
     justify-content: center;
     box-sizing: border-box;
     cursor: pointer;
+    transition: all 400ms;
     background: repeating-linear-gradient(135deg,
             $color_border,
             $color_border $line_sep,
