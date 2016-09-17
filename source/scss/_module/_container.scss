@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import "../_var/colors";
+@import "../_var/dimense";
+
+html,body {
+    height: 100vh;
+}
+
+body {
+    color: $color_gray;
+    background-color: $color_bg;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 300;
+}
+
+code {
+    overflow-x: scroll;
+}
+
+img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.img-h300 {
+    max-height: 300px;
+}
+
+.img-h600 {
+    max-height: 600px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 1px solid $color_gray;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background: $color_bg;
+    &:hover {
+        $line_sep: 2px;
+        //color: $color_white;
+        //background-color: $color_gray;
+        background: repeating-linear-gradient(135deg,
+                $color_border,
+                $color_border $line_sep,
+                transparent $line_sep,
+                transparent 2 * $line_sep);
+    }
+    display: none;
+}
+
+@media (max-width: $md) {
+    .menu {
+        display: block;
+    }
+}

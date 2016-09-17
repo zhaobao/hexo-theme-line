@@ -1,0 +1,19 @@
+extends base
+
+block nav
+    - var pageName = "POST"
+    include _partial/menu
+
+block header
+    - var pageHeader = page.title
+    include _partial/body_header
+
+block content
+    div.body__content
+        if page.tags.length > 0
+            div.body__item.post_tags
+                for tag in page.tags.toArray()
+                    a(href=url_for(tag.path) class="post_tag")= tag.name
+        if page.content.length > 0
+            div.body__item
+                != page.more

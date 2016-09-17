@@ -1,0 +1,19 @@
+{
+  "name": "hexo-theme-line",
+  "version": "1.0.0",
+  "description": "Dead simple and beautify Hexo theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaobao/hexo-theme-line.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhaobao/hexo-theme-line/issues"
+  },
+  "homepage": "https://github.com/zhaobao/hexo-theme-line#readme"
+}

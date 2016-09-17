@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        include _partial/header.jade
+    body
+        div.container
+            block nav
+                include _partial/menu.jade
+            div.body
+                block header
+                    include _partial/body_header.jade
+                block content
+                    div.body__content
+                include _partial/body_footer.jade
+        include _partial/mobile_menu.jade
+        != js('js/highlight.js')
+        != js('lib/zoom/zepto.js')
+        != js('lib/zoom/zoom.js')
+        != js('js/footer.js')

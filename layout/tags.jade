@@ -1,0 +1,15 @@
+extends base
+
+block nav
+    - var pageName = "TAGS"
+    include _partial/menu
+
+block header
+    - var pageHeader = __("site_tags")
+    include _partial/body_header
+
+block content
+    div.body__content.tag__content
+        div.body__item.post_tags.post_tags_page
+            each tag in site.tags.toArray()
+                a(href=url_for(tag.path) class="post_tag post_tag_item")= tag.name

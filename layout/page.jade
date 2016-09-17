@@ -1,0 +1,14 @@
+extends base
+
+block nav
+    - var pageName = "ABOUT"
+    include _partial/menu
+
+block header
+    - var pageHeader = __("site_about")
+    include _partial/body_header
+
+block content
+    div.body__content.page__content
+        div.body__item
+            != page.content

@@ -1,0 +1,11 @@
+# Theme configuration
+
+# menus
+menus:
+  home: /
+  tags: tags
+  about: about
+
+# zoom image support
+
+# comments

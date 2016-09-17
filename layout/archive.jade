@@ -1,0 +1,18 @@
+extends base
+
+block nav
+    - var pageName = "ARCHIVES"
+    include _partial/menu
+
+block header
+    - var pageHeader = __("site_tags") + " : " + page.tag
+    include _partial/body_header
+
+block content
+    div.body__content.archive__content
+        each post in page.posts.toArray()
+            a(href=url_for(post.path), title=post.title).body__item.post__title
+                span!= post.title
+                - var d = new Date(post.date)
+                - var dstr = d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDate()
+                span(class="archive_date")!= dstr
