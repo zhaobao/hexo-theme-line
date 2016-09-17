@@ -54,6 +54,10 @@ html,body {
     height: 100vh;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     color: $color_gray;
     background-color: $color_bg;

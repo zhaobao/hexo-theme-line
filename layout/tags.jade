@@ -13,3 +13,5 @@ block content
         div.body__item.post_tags.post_tags_page
             each tag in site.tags.toArray()
                 a(href=url_for(tag.path) class="post_tag post_tag_item")= tag.name
+    div.body__pagination
+        div.pull-right!= paginator()

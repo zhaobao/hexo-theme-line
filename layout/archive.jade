@@ -17,3 +17,5 @@ block content
                 - var d = new Date(post.date)
                 - var dstr = d.getFullYear() + "/" + (d.getMonth()+1) + "/" + d.getDate()
                 span(class="archive_date")!= dstr
+    div.body__pagination
+        div.pull-right!= paginator()
