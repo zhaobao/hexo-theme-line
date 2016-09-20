@@ -23,6 +23,7 @@ theme: line
 menus:   change menu
 zoom:    image zoom support
 disqus:  disqus support
+ga:      google analytics supoort
 ```
 
 ## develop
@@ -32,8 +33,8 @@ disqus:  disqus support
 | index                              | √         |
 | tags                               | √         |
 | page                               | √         |
-| ga support                         |           |
-| disqus support                     |           |
+| ga support                         | √         |
+| disqus support                     | √         |
 | search support                     |           |
 | i18n support                       |           |
 | back to top support for mobile     |           |

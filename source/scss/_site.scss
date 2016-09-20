@@ -94,7 +94,6 @@ code {
 
 pre {
     max-width: 100%;
-    overflow-x: scroll;
     white-space: pre-wrap;
 }
 
@@ -126,4 +125,8 @@ h5::before {
 h6::before {
     content: "######";
     padding-right: 5px;
+}
+
+#disqus_thread {
+    padding: 20px;
 }

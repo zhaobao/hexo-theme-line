@@ -13,7 +13,33 @@ html
                     div.body__content
                 include _partial/body_footer.jade
         include _partial/mobile_menu.jade
+
+        // code highlight support
         != js('js/highlight.js')
-        != js('lib/zoom/zepto.js')
-        != js('lib/zoom/zoom.js')
+
+        // zoom support
+        if theme.zoom
+            != js('lib/zoom/zepto.js')
+            != js('lib/zoom/zoom.js')
+
+        // disqus support
+        if theme.disqus && theme.disqus != "" && page.comments && !is_home()
+            script.
+                (function () {
+                    var d = document, s = d.createElement('script');
+                    s.src = '//#{theme.disqus}.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+
+        // ga support
+        if theme.ga && theme.ga != ""
+            script.
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q || []).push(arguments)},i[r].l=1 * new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', '#{theme.ga}', 'auto');
+                ga('send', 'pageview');
+
         != js('js/footer.js')

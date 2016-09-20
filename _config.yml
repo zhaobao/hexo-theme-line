@@ -10,4 +10,7 @@ menus:
 zoom: true
 
 # comments
-disqus: zhishoumowen
+disqus:
+
+# GA support
+ga:
