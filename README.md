@@ -20,9 +20,9 @@ theme: line
 
 3 custom.
 ```
-menus: change menu
-zoom: image zoom support
-disqus: disqus support
+menus:   change menu
+zoom:    image zoom support
+disqus:  disqus support
 ```
 
 ## develop
@@ -32,10 +32,11 @@ disqus: disqus support
 | index                              | √         |
 | tags                               | √         |
 | page                               | √         |
+| ga support                         |           |
 | disqus support                     |           |
-| back to top support for mobile     |           |
-| category support                   |           |
-| ui polish                          |           |
 | search support                     |           |
+| i18n support                       |           |
+| back to top support for mobile     |           |
+| ui polish                          |           |
 
 ## enjoy!
